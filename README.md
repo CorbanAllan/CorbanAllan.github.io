@@ -1,9 +1,9 @@
 # Student
 
 ### Education
-Alevel - Software Systems Development
-Alevel - Physics
-Alevel - Politics
+- A-level| Software Systems Development
+- A-level| Physics
+- A-level| Politics
 
 ### Work Experience
 Future Platforms
