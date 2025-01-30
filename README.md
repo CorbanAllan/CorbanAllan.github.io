@@ -1,5 +1,11 @@
 # Work Experience
 - Future Platforms
+  - Engaged in a work placement with Future Platforms, I had the
+    opportunity to collaborate with various members of the software
+    development team, gaining insights from a diverse group of
+    professionals across different specialties. Despite the remote setting,
+    I was able to engage in regular meetings and discussions, which
+    allowed me to build connections with the team.
 - Kainos
 - Generation innovation
 
