@@ -17,6 +17,20 @@
 - SpaceX App
    - Developed an android mobile application utilising kotlin, android studio and the SpaceX api to fetch and display information about their rockets and launches.
 <img padding="50" width="371" alt="SpaceX" src="https://github.com/user-attachments/assets/c5413991-efb8-4c72-a39e-2bae32fe66f1" />
+
+# Education
+- A-Level Software Systems Development
+  - Lagan College
+    - 2023-2024
+A-Level Physics
+Lagan College
+2023-2024
+A-Level Politics
+Lagan College
+2023-2024
+9 GCSE’s A-C
+Lagan College
+2021-2022
       
 
 
