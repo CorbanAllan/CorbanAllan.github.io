@@ -11,7 +11,7 @@
    experience with modern technologies, agile methodologies, and best practices in software engineering. This experience enhanced my technical knowledge and problem 
    solving skills, preparing me for real-world development challenges
 - Generation innovation
-   -During my time at Generation Innovation, I took part in an immersive educational program designed to develop entrepreneurial and problem-solving skills. I collaborated with like-minded peers to tackle real-world business challenges, gaining insights into innovation, teamwork, and critical thinking. This experience strengthened my ability to think creatively and work effectively in dynamic environments.
+  - During my time at Generation Innovation, I took part in an immersive educational program designed to develop entrepreneurial and problem-solving skills. I collaborated with like-minded peers to tackle real-world business challenges, gaining insights into innovation, teamwork, and critical thinking. This experience strengthened my ability to think creatively and work effectively in dynamic environments.
 
 # Projects
 - Developed an android mobile application utilising kotlin, android studio and the SpaceX api to fetch and display information about their rockets and launches.
