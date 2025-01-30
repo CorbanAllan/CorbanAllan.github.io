@@ -14,7 +14,8 @@
   - During my time at Generation Innovation, I took part in an immersive educational program designed to develop entrepreneurial and problem-solving skills. I collaborated with like-minded peers to tackle real-world business challenges, gaining insights into innovation, teamwork, and critical thinking. This experience strengthened my ability to think creatively and work effectively in dynamic environments.
 
 # Projects
-- Developed an android mobile application utilising kotlin, android studio and the SpaceX api to fetch and display information about their rockets and launches.
+- SpaceX App
+   - Developed an android mobile application utilising kotlin, android studio and the SpaceX api to fetch and display information about their rockets and launches.
 <img width="371" alt="SpaceX" src="https://github.com/user-attachments/assets/c5413991-efb8-4c72-a39e-2bae32fe66f1" />
 
 
