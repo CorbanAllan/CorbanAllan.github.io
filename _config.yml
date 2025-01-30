@@ -1,7 +1,5 @@
 title: Corban Allan
-description: Tel No | 07555111735 
-Email | corbanallan@gmail.com
-                    
+description: Email | corbanallan@gmail.com               
 logo: /assets/img/profile.png
-show_downloads: true
+show_downloads: false
 theme: jekyll-theme-minimal
