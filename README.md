@@ -20,17 +20,13 @@
 
 # Education
 - A-Level Software Systems Development
-  - Lagan College
-    - 2023-2024
-A-Level Physics
-Lagan College
-2023-2024
-A-Level Politics
-Lagan College
-2023-2024
-9 GCSE’s A-C
-Lagan College
-2021-2022
+  - Lagan College | 2023-2024
+- A-Level Physics
+  - Lagan College | 2023-2024
+- A-Level Politics
+  - Lagan College | 2023-2024
+- 9 GCSE’s A-C
+  - Lagan College | 2021-2022
       
 
 
