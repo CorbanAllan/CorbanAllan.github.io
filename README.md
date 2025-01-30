@@ -7,7 +7,7 @@
     I was able to engage in regular meetings and discussions, which
     allowed me to build connections with the team.
 - Kainos
-  -During my time at Kainos, I participated in an educational program that provided valuable insights into the software development industry. I gained hands-on 
+   - During my time at Kainos, I participated in an educational program that provided valuable insights into the software development industry. I gained hands-on 
    experience with modern technologies, agile methodologies, and best practices in software engineering. This experience enhanced my technical knowledge and problem 
    solving skills, preparing me for real-world development challenges
 - Generation innovation
