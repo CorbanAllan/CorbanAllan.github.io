@@ -18,8 +18,6 @@
    - Developed an android mobile application utilising kotlin, android studio and the SpaceX api to fetch and display information about their rockets and launches.
 <img padding="50" width="371" alt="SpaceX" src="https://github.com/user-attachments/assets/c5413991-efb8-4c72-a39e-2bae32fe66f1" />
 
--
-
 - VR Tour
    - Created a virtual reality tour of my college for students who may not have been able to attend open days due to accesibility issues. This project won the carson award and a £1000 grant for my school. I         also went on to give a speech at ulster university about what i created to various school officals and university students.
 <img padding="50" alt="SpaceX" src="https://github.com/user-attachments/assets/544b87ba-e562-4960-bf3c-e4711fe86ac6"/>
