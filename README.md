@@ -16,8 +16,8 @@
 # Projects
 - SpaceX App
    - Developed an android mobile application utilising kotlin, android studio and the SpaceX api to fetch and display information about their rockets and launches.
-<img padding="50" width="371" alt="SpaceX" src="assets/SpaceX_1.png" />
-<img padding="50" width="371" alt="SpaceX" src="assets/SpaceX_2.png" />
+<img padding="50" width="371" alt="SpaceX" src="https://CorbanAllan.github.io/assets/SpaceX_1.png" />
+<img padding="50" width="371" alt="SpaceX" src="https://CorbanAllan.github.io/assets/SpaceX_2.png" />
 
 - VR Tour
    - Created a virtual reality tour of my college for students who may not have been able to attend open days due to accesibility issues. This project won the carson award and a £1000 grant for my school. I         also went on to give a speech at ulster university about what i created to various school officals and university students.
