@@ -191,6 +191,41 @@
     .carousel img:hover {
       transform: scale(1.05);
     }
+
+    /* ===== Skills Section ===== */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .skill-card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .skill-card img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+      box-shadow: none;
+    }
+
+    .skill-card p {
+      margin: 0;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
@@ -235,27 +270,25 @@
         <img src="https://CorbanAllan.github.io/assets/img/sequencio-4.png" alt="Sequencio Game over" />
       </div>
 
-      
       <h3>SpaceX App</h3>
       <p>
-        Developed an Android mobile application using Kotlin, Jetpack Compose, and the MVVM architecture. The app fetches data from the SpaceX API and displays detailed information about rocket launches, configurations, missions, and launch sites. The UI is designed to be modern, responsive, and user-friendly, with efficient state management and asynchronous data loading.
+        Developed an Android mobile application using Kotlin, Jetpack Compose, and the MVVM architecture.
       </p>
 
       <div class="carousel">
         <img src="https://CorbanAllan.github.io/assets/img/SpaceX_1.png" alt="SpaceX Screenshot 1" />
         <img src="https://CorbanAllan.github.io/assets/img/SpaceX_2.png" alt="SpaceX Screenshot 2" />
-        <img src="https://CorbanAllan.github.io/assets/img/SpaceX_3.png" alt="SpaceX Screenshot 23" />
+        <img src="https://CorbanAllan.github.io/assets/img/SpaceX_3.png" alt="SpaceX Screenshot 3" />
       </div>
 
       <h3>VR Tour</h3>
       <p>
-        Built a VR tour of my college to improve accessibility for students who couldn’t attend open days. This project won the Carson Award and a £1000 grant.
-        I also gave a talk at Ulster University to students and school officials about the project.
+        Built a VR tour of my college to improve accessibility for students who couldn’t attend open days.
       </p>
+
       <div class="project-images">
         <img src="https://github.com/user-attachments/assets/544b87ba-e562-4960-bf3c-e4711fe86ac6" alt="VR Tour Image" />
       </div>
-      
     </section>
 
     <section>
@@ -267,6 +300,37 @@
         <li><strong>A-Level Politics</strong><br>Lagan College | 2022–2024</li>
         <li><strong>9 GCSEs A–C</strong><br>Lagan College | 2020–2022</li>
       </ul>
+    </section>
+
+    <!-- ===== Skills Section ===== -->
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <p>Python</p>
+        </div>
+  
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+          <p>C#</p>
+        </div>
+  
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin">
+          <p>Kotlin</p>
+        </div>
+  
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Jetpack Compose">
+          <p>Jetpack Compose</p>
+        </div>
+  
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+          <p>Firebase</p>
+        </div>
+      </div>
     </section>
 
     <section>
@@ -299,3 +363,4 @@
 
 </body>
 </html>
+
