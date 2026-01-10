@@ -160,6 +160,37 @@
       color: white;
       margin-top: 4rem;
     }
+
+    .carousel {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 0.5rem;
+    }
+    
+    .carousel::-webkit-scrollbar {
+      height: 8px;
+    }
+    
+    .carousel::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px;
+    }
+    
+    .carousel img {
+      scroll-snap-align: center;
+      flex: 0 0 auto;
+      width: 280px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    
+    .carousel img:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
@@ -193,24 +224,6 @@
     <section>
       <h2>Projects</h2>
 
-      <h3>SpaceX App</h3>
-      <p>
-        Developed an Android mobile application using Kotlin, Jetpack Compose, and the MVVM architecture. The app fetches data from the SpaceX API and displays detailed information about rocket launches, configurations, missions, and launch sites. The UI is designed to be modern, responsive, and user-friendly, with efficient state management and asynchronous data loading.
-      </p>
-      <div class="project-images">
-        <img src="https://CorbanAllan.github.io/assets/img/SpaceX_1.png" alt="SpaceX Screenshot 1" />
-        <img src="https://CorbanAllan.github.io/assets/img/SpaceX_2.png" alt="SpaceX Screenshot 2" />
-      </div>
-
-      <h3>VR Tour</h3>
-      <p>
-        Built a VR tour of my college to improve accessibility for students who couldn’t attend open days. This project won the Carson Award and a £1000 grant.
-        I also gave a talk at Ulster University to students and school officials about the project.
-      </p>
-      <div class="project-images">
-        <img src="https://github.com/user-attachments/assets/544b87ba-e562-4960-bf3c-e4711fe86ac6" alt="VR Tour Image" />
-      </div>
-      
       <h3>Sequencio</h3>
       <p>
         Sequencio is a modern, visually engaging memory game app where players replicate increasingly complex sequences of colored quarters.
@@ -233,17 +246,38 @@
         Coroutines & StateFlow · Material 3 Components
       </p>
       
-      <div class="project-images">
-        <img src="https://your-image-link-1.png" alt="Sequencio Gameplay" />
-        <img src="https://your-image-link-2.png" alt="Sequencio Leaderboard" />
-        <img src="https://your-image-link-3.png" alt="Sequencio Settings" />
+      <div class="carousel">
+        <img src="https://sequencio-1.png" alt="Sequencio Home" />
+        <img src="https://sequencio-2.png" alt="Sequencio Settings" />
+        <img src="https://sequencio-3.png" alt="Sequencio Gameplay" />
+        <img src="https://sequencio-4.png" alt="Sequencio game over" />
       </div>
+
+      
+      <h3>SpaceX App</h3>
+      <p>
+        Developed an Android mobile application using Kotlin, Jetpack Compose, and the MVVM architecture. The app fetches data from the SpaceX API and displays detailed information about rocket launches, configurations, missions, and launch sites. The UI is designed to be modern, responsive, and user-friendly, with efficient state management and asynchronous data loading.
+      </p>
+      <div class="project-images">
+        <img src="https://CorbanAllan.github.io/assets/img/SpaceX_1.png" alt="SpaceX Screenshot 1" />
+        <img src="https://CorbanAllan.github.io/assets/img/SpaceX_2.png" alt="SpaceX Screenshot 2" />
+      </div>
+      
+      <h3>VR Tour</h3>
+      <p>
+        Built a VR tour of my college to improve accessibility for students who couldn’t attend open days. This project won the Carson Award and a £1000 grant.
+        I also gave a talk at Ulster University to students and school officials about the project.
+      </p>
+      <div class="project-images">
+        <img src="https://github.com/user-attachments/assets/544b87ba-e562-4960-bf3c-e4711fe86ac6" alt="VR Tour Image" />
+      </div>
+      
     </section>
 
     <section>
       <h2>Education</h2>
       <ul>
-        <li><strong></strong><br>BSc Computing systems PT, Ulster University | 2025–Present</li>
+        <li><strong>BSc Computing systems PT</strong><br>Ulster University | 2025–Present</li>
         <li><strong>A-Level Software Systems Development</strong><br>Lagan College | 2023–2024</li>
         <li><strong>A-Level Physics</strong><br>Lagan College | 2023–2024</li>
         <li><strong>A-Level Politics</strong><br>Lagan College | 2023–2024</li>
