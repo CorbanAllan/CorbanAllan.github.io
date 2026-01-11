@@ -226,51 +226,138 @@
       font-weight: 600;
     }
 
-    .education-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.education-card {
-  display: flex;
-  align-items: center;
-  background: var(--card);
-  padding: 1rem;
-  border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.education-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-}
-
-.edu-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 24px; 
-  overflow: hidden;
-  flex-shrink: 0;
-  margin-right: 1rem;
-  background: #eee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.edu-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.edu-text {
-  flex: 1;
-  font-size: 1rem;
-}
+        .education-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .education-card {
+      display: flex;
+      align-items: center;
+      background: var(--card);
+      padding: 1rem;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .education-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+    
+    .edu-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 24px; 
+      overflow: hidden;
+      flex-shrink: 0;
+      margin-right: 1rem;
+      background: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .edu-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .edu-text {
+      flex: 1;
+      font-size: 1rem;
+    }
+        /* ===== Project Cards Grid ===== */
+    .projects-grid {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    
+    .project-card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      width: 200px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+    
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+    }
+    
+    /* ===== Modal ===== */
+    .project-modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+      padding-top: 50px;
+    }
+    
+    .project-modal-content {
+      background-color: var(--card);
+      margin: auto;
+      padding: 2rem;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+      position: relative;
+    }
+    
+    .project-modal-content .close {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+    }
+    
+    .project-modal-content .close:hover {
+      color: #000;
+    }
+    
+    .project-modal-content h3 {
+      margin-top: 0;
+    }
+    
+    .project-modal-content .carousel {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      margin-top: 1rem;
+    }
+    
+    .project-modal-content .carousel img {
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      flex: 0 0 auto;
+    }
   </style>
 </head>
 <body>
@@ -283,145 +370,125 @@
 
   <main>
 
-    <section>
-      <h2>Projects</h2>
+   <section>
+  <h2>Projects</h2>
+  <div class="projects-grid">
 
-      <h3>Sequencio</h3>
-      <p>
-        Sequencio is a modern, visually engaging memory game app where players replicate increasingly complex sequences of colored quarters.
-        The app features smooth animations, immersive sound effects, and a global leaderboard that lets players compete worldwide.
-      </p>
-      
-      <p>
-        <strong>Key Features:</strong><br>
-        • Classic sequence memory gameplay that increases in difficulty each round<br>
-        • Global leaderboard powered by Firebase Firestore<br>
-        • Neon-style visuals with glowing effects and immersive audio<br>
-        • Settings screen with toggles for sound, music, and vibration<br>
-        • Google Sign-In authentication to securely sync scores and preferences<br>
-        • Responsive UI that adapts smoothly across device sizes
-      </p>
-      
-      <p>
-        <strong>Technologies Used:</strong><br>
-        Kotlin & Jetpack Compose · Firebase Authentication · Firebase Firestore · Hilt ·
-        Coroutines & StateFlow · Material 3 Components
-      </p>
-      
-      <div class="carousel">
-        <img src="https://CorbanAllan.github.io/assets/img/sequencio-1.png" alt="Sequencio Home" />
-        <img src="https://CorbanAllan.github.io/assets/img/sequencio-2.png" alt="Sequencio Settings" />
-        <img src="https://CorbanAllan.github.io/assets/img/sequencio-3.png" alt="Sequencio Gameplay" />
-        <img src="https://CorbanAllan.github.io/assets/img/sequencio-4.png" alt="Sequencio Game over" />
-      </div>
-
-      <h3>SpaceX App</h3>
-      <p>
-        Developed an Android mobile application using Kotlin, Jetpack Compose, and the MVVM architecture.
-      </p>
-
-      <div class="carousel">
-        <img src="https://CorbanAllan.github.io/assets/img/SpaceX_1.png" alt="SpaceX Screenshot 1" />
-        <img src="https://CorbanAllan.github.io/assets/img/SpaceX_2.png" alt="SpaceX Screenshot 2" />
-        <img src="https://CorbanAllan.github.io/assets/img/SpaceX_3.png" alt="SpaceX Screenshot 3" />
-      </div>
-
-      <h3>VR Tour</h3>
-      <p>
-        Built a VR tour of my college to improve accessibility for students who couldn’t attend open days.
-      </p>
-
-      <div class="project-images">
-        <img src="https://github.com/user-attachments/assets/544b87ba-e562-4960-bf3c-e4711fe86ac6" alt="VR Tour Image" />
-      </div>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-          <p>Python</p>
-        </div>
-  
-        <div class="skill-card">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
-          <p>C#</p>
-        </div>
-  
-        <div class="skill-card">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin">
-          <p>Kotlin</p>
-        </div>
-  
-        <div class="skill-card">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Jetpack Compose">
-          <p>Jetpack Compose</p>
-        </div>
-  
-        <div class="skill-card">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
-          <p>Firebase</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-  <h2>Education</h2>
-  <div class="education-grid">
-
-    <div class="education-card">
-      <div class="edu-img">
-        <img src="https://CorbanAllan.github.io/assets/img/ulster.png" alt="Ulster University">
-      </div>
-      <div class="edu-text">
-        <strong>BSc Computing Systems PT</strong><br>
-        Ulster University | 2025–Present
-      </div>
+    <!-- Sequencio Card -->
+    <div class="project-card" onclick="showProject('sequencio')">
+      <img src="https://CorbanAllan.github.io/assets/img/sequencio_logo.png" alt="Sequencio" />
+      <p>Sequencio</p>
     </div>
 
-    <div class="education-card">
-      <div class="edu-img">
-        <img src="https://CorbanAllan.github.io/assets/img/lagan.jpg" alt="Lagan College">
-      </div>
-      <div class="edu-text">
-        <strong>A-Level Software Systems Development</strong><br>
-        Lagan College | 2022–2024
-      </div>
+    <!-- SpaceX App Card -->
+    <div class="project-card" onclick="showProject('spacex')">
+      <img src="https://CorbanAllan.github.io/assets/img/spacex_logo.svg" alt="SpaceX App" />
+      <p>SpaceX</p>
     </div>
 
-    <div class="education-card">
-      <div class="edu-img">
-        <img src="https://CorbanAllan.github.io/assets/img/lagan.jpg" alt="Lagan College">
-      </div>
-      <div class="edu-text">
-        <strong>A-Level Physics</strong><br>
-        Lagan College | 2022–2024
-      </div>
-    </div>
-
-    <div class="education-card">
-      <div class="edu-img">
-        <img src="https://CorbanAllan.github.io/assets/img/lagan.jpg" alt="Lagan College">
-      </div>
-      <div class="edu-text">
-        <strong>A-Level Politics</strong><br>
-        Lagan College | 2022–2024
-      </div>
-    </div>
-
-    <div class="education-card">
-      <div class="edu-img">
-        <img src="https://CorbanAllan.github.io/assets/img/lagan.jpg" alt="Lagan College">
-      </div>
-      <div class="edu-text">
-        <strong>9 GCSEs A–C</strong><br>
-        Lagan College | 2020–2022
-      </div>
+    <!-- VR Tour Card -->
+    <div class="project-card" onclick="showProject('vr')">
+      <img src="https://github.com/user-attachments/assets/vr_logo.png" alt="VR Tour" />
+      <p>VR Tour</p>
     </div>
 
   </div>
+
+  <!-- Project Details Modal -->
+  <div id="projectModal" class="project-modal">
+    <div class="project-modal-content">
+      <span class="close" onclick="closeProject()">&times;</span>
+      <div id="projectDetails"></div>
+    </div>
+  </div>
 </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <p>Python</p>
+          </div>
+    
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+            <p>C#</p>
+          </div>
+    
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin">
+            <p>Kotlin</p>
+          </div>
+    
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Jetpack Compose">
+            <p>Jetpack Compose</p>
+          </div>
+    
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+            <p>Firebase</p>
+          </div>
+        </div>
+      </section>
+  
+      <section>
+        <h2>Education</h2>
+        <div class="education-grid">
+      
+          <div class="education-card">
+            <div class="edu-img">
+              <img src="https://CorbanAllan.github.io/assets/img/ulster.png" alt="Ulster University">
+            </div>
+            <div class="edu-text">
+              <strong>BSc Computing Systems PT</strong><br>
+              Ulster University | 2025–Present
+            </div>
+          </div>
+      
+          <div class="education-card">
+            <div class="edu-img">
+              <img src="https://CorbanAllan.github.io/assets/img/lagan.jpg" alt="Lagan College">
+            </div>
+            <div class="edu-text">
+              <strong>A-Level Software Systems Development</strong><br>
+              Lagan College | 2022–2024
+            </div>
+          </div>
+      
+          <div class="education-card">
+            <div class="edu-img">
+              <img src="https://CorbanAllan.github.io/assets/img/lagan.jpg" alt="Lagan College">
+            </div>
+            <div class="edu-text">
+              <strong>A-Level Physics</strong><br>
+              Lagan College | 2022–2024
+            </div>
+          </div>
+      
+          <div class="education-card">
+            <div class="edu-img">
+              <img src="https://CorbanAllan.github.io/assets/img/lagan.jpg" alt="Lagan College">
+            </div>
+            <div class="edu-text">
+              <strong>A-Level Politics</strong><br>
+              Lagan College | 2022–2024
+            </div>
+          </div>
+      
+          <div class="education-card">
+            <div class="edu-img">
+              <img src="https://CorbanAllan.github.io/assets/img/lagan.jpg" alt="Lagan College">
+            </div>
+            <div class="edu-text">
+              <strong>9 GCSEs A–C</strong><br>
+              Lagan College | 2020–2022
+            </div>
+          </div>
+      
+        </div>
+      </section>
 
 
     <section>
@@ -450,7 +517,78 @@
     function toggleTheme() {
       document.body.classList.toggle('dark');
     }
+    const projects = {
+      sequencio: `
+        <h3>Sequencio</h3>
+        <p>Sequencio is a modern, visually engaging memory game app where players replicate increasingly complex sequences of colored quarters. The app features smooth animations, immersive sound effects, and a global leaderboard that lets players compete worldwide.</p>
+        <p><strong>Key Features:</strong><br>
+          • Classic sequence memory gameplay that increases in difficulty each round<br>
+          • Global leaderboard powered by Firebase Firestore<br>
+          • Neon-style visuals with glowing effects and immersive audio<br>
+          • Settings screen with toggles for sound, music, and vibration<br>
+          • Google Sign-In authentication to securely sync scores and preferences<br>
+          • Responsive UI that adapts smoothly across device sizes
+        </p>
+        <p><strong>Technologies Used:</strong><br>
+          Kotlin & Jetpack Compose · Firebase Authentication · Firebase Firestore · Hilt · Coroutines & StateFlow · Material 3 Components
+        </p>
+        <div class="carousel">
+          <img src="https://CorbanAllan.github.io/assets/img/sequencio-1.png" alt="Sequencio Screenshot 1">
+          <img src="https://CorbanAllan.github.io/assets/img/sequencio-2.png" alt="Sequencio Screenshot 2">
+          <img src="https://CorbanAllan.github.io/assets/img/sequencio-3.png" alt="Sequencio Screenshot 3">
+          <img src="https://CorbanAllan.github.io/assets/img/sequencio-4.png" alt="Sequencio Screenshot 4">
+        </div>
+      `,
+      spacex: `
+        <h3>SpaceX App</h3>
+        <p>The SpaceX App is a dynamic mobile application built with Kotlin and Jetpack Compose that delivers up-to-date information about SpaceX launches, rockets, missions, and news. The app fetches real-time data using the SpaceDevs API and a dedicated news API, providing users with both technical details and the latest updates in the space industry. Retrofit is used for efficient networking and data retrieval, while MVVM architecture ensures a responsive and maintainable UI.</p>
+        <p><strong>Key Features:</strong><br>
+          • Real-time SpaceX launch and rocket data using the SpaceDevs API<br>
+          • Integration with a news API for the latest space-related articles<br>
+          • Modern, responsive UI built with Jetpack Compose<br>
+          • Detailed mission and launch information with historical data<br>
+          • Smooth asynchronous data loading using Coroutines<br>
+          • MVVM architecture for clean state management and scalability
+        </p>
+        <p><strong>Technologies Used:</strong><br>
+          Kotlin · Jetpack Compose · Retrofit · SpaceDevs API · News API · MVVM · Coroutines & StateFlow
+        </p>
+        <div class="carousel">
+          <img src="https://CorbanAllan.github.io/assets/img/SpaceX_1.png" alt="SpaceX Screenshot 1">
+          <img src="https://CorbanAllan.github.io/assets/img/SpaceX_2.png" alt="SpaceX Screenshot 2">
+          <img src="https://CorbanAllan.github.io/assets/img/SpaceX_3.png" alt="SpaceX Screenshot 3">
+        </div>
+      `,
+      vr: `
+        <h3>VR Tour</h3>
+        <p>Developed an interactive VR tour of my college using ThingLink, designed to improve accessibility for students unable to attend open days. The tour provides a fully immersive experience with 360° views, embedded multimedia, and interactive hotspots, allowing users to explore key areas of the campus virtually. This project won the Carson Award and a £1000 grant, and I presented it at Ulster University to students and school officials.</p>
+        <p><strong>Key Features:</strong><br>
+          • Interactive 360° VR tour of the college campus<br>
+          • Embedded multimedia content including images, audio, and video<br>
+          • Clickable hotspots for additional information and navigation<br>
+          • Accessible for students who cannot attend in-person open days<br>
+          • Recognized with the Carson Award and grant funding<br>
+          • Presented at Ulster University for educational outreach
+        </p>
+        <p><strong>Technologies Used:</strong><br>
+          ThingLink · Interactive VR · Multimedia Integration · Web & Mobile Accessible
+        </p>
+        <div class="carousel">
+          <img src="https://github.com/user-attachments/assets/544b87ba-e562-4960-bf3c-e4711fe86ac6" alt="VR Tour Screenshot">
+        </div>
+      `
+    };
+    
+    function showProject(project) {
+      document.getElementById('projectDetails').innerHTML = projects[project];
+      document.getElementById('projectModal').style.display = 'block';
+    }
+    
+    function closeProject() {
+      document.getElementById('projectModal').style.display = 'none';
+    }
   </script>
+
 
 </body>
 </html>
