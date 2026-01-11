@@ -226,7 +226,7 @@
       font-weight: 600;
     }
 
-        .education-grid {
+    .education-grid {
       display: flex;
       flex-direction: column;
       gap: 1rem;
@@ -271,27 +271,23 @@
       flex: 1;
       font-size: 1rem;
     }
-        /* ===== Project Cards Grid ===== */
+    
     .projects-grid {
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
       justify-content: center;
       margin-top: 1rem;
-    }
-    
+      }
+      
     .project-card {
-      background: none; /* removed the white card */
-      border-radius: 50%; /* optional for fully circular hover effect */
-      padding: 0.5rem;
       text-align: center;
-      width: 80px; /* smaller size for icons */
       cursor: pointer;
       transition: transform 0.2s ease;
     }
     
     .project-card:hover {
-      transform: scale(1.2); /* subtle zoom on hover */
+      transform: scale(1.1);
     }
     
     .project-card p {
@@ -300,16 +296,20 @@
       font-weight: 600;
     }
     
-    //* Fixed size rounded images */
+    /* Fixed size rounded images */
     .project-icon {
-      width: 300px;
+      width: 300px; /* consistent across all */
       height: 300px;
-      border-radius: 50%; /* circular */
-      object-fit: cover; /* ensures image fills the circle */
+      border-radius: 50%;
+      object-fit: cover;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       transition: transform 0.3s ease;
     }
     
+    .project-icon:hover {
+      transform: scale(1.05);
+    }
+
     /* ===== Modal ===== */
     .project-modal {
       display: none;
