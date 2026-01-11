@@ -300,13 +300,14 @@
       font-weight: 600;
     }
     
-    /* Rounded icon images */
+    //* Fixed size rounded images */
     .project-icon {
-      width: 60px; /* smaller app icon size */
-      height: 60px;
-      border-radius: 50%; /* makes image a perfect circle */
-      object-fit: cover;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      width: 300px;
+      height: 300px;
+      border-radius: 50%; /* circular */
+      object-fit: cover; /* ensures image fills the circle */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
     }
     
     /* ===== Modal ===== */
