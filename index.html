@@ -281,25 +281,32 @@
     }
     
     .project-card {
-      background: var(--card);
-      border-radius: 12px;
-      padding: 1rem;
+      background: none; /* removed the white card */
+      border-radius: 50%; /* optional for fully circular hover effect */
+      padding: 0.5rem;
       text-align: center;
-      width: 200px;
+      width: 80px; /* smaller size for icons */
       cursor: pointer;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.2s ease;
     }
     
     .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      transform: scale(1.2); /* subtle zoom on hover */
     }
     
-    .project-card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 0.5rem;
+    .project-card p {
+      margin-top: 0.3rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    
+    /* Rounded icon images */
+    .project-icon {
+      width: 60px; /* smaller app icon size */
+      height: 60px;
+      border-radius: 50%; /* makes image a perfect circle */
+      object-fit: cover;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
     }
     
     /* ===== Modal ===== */
