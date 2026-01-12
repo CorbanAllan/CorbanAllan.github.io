@@ -339,35 +339,36 @@
     }
 
     /* Remove default details arrow */
-summary {
-  list-style: none;
-}
-summary::-webkit-details-marker {
-  display: none;
-}
-
-/* Make dropdown header behave like a card */
-.project-dropdown {
-  cursor: pointer;
-  user-select: none;
-  justify-content: space-between;
-}
-
-/* Arrow styling */
-.dropdown-arrow {
-  font-size: 1.2rem;
-  transition: transform 0.3s ease;
-}
-
-/* Rotate arrow when open */
-details[open] .dropdown-arrow {
-  transform: rotate(180deg);
-}
-
-/* Space between dropdown card and content */
-details > .projects-grid {
-  margin-top: 1rem;
-}
+    summary {
+      list-style: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    
+    /* Make dropdown header behave like a card */
+    .project-dropdown {
+      cursor: pointer;
+      user-select: none;
+      justify-content: space-between;
+      margin-bottom: 1.5rem; 
+    }
+    
+    /* Arrow styling */
+    .dropdown-arrow {
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+    
+    /* Rotate arrow when open */
+    details[open] .dropdown-arrow {
+      transform: rotate(180deg);
+    }
+    
+    /* Space between dropdown card and content */
+    details > .projects-grid {
+      margin-top: 1rem;
+    }
 
   </style>
 </head>
