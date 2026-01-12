@@ -399,13 +399,26 @@
   </header>
 
   <main>
+    
     <section>
       <h2>Projects</h2>
     
-      <details open>
-        <summary>Personal Projects</summary>
+      <details>
+        <summary>Academic Projects</summary>
         <div class="projects-grid">
-            <!-- Sequencio Card -->
+          <!-- future coursework projects -->
+        </div>
+      </details>
+    </section>
+
+    <details open>
+  <summary class="project-card project-dropdown">
+    <div class="project-text"><strong>Personal Projects</strong></div>
+    <span class="dropdown-arrow">▼</span>
+  </summary>
+
+  <div class="projects-grid">
+      <!-- Sequencio Card -->
           <div class="project-card" onclick="showProject('sequencio')">
             <div class="project-img"><img src="https://CorbanAllan.github.io/assets/img/sequencio_logo.webp" alt="Sequencio"></div>
             <div class="project-text"><strong>Sequencio</strong></div>
@@ -425,16 +438,20 @@
             <div class="project-text"><strong>VR Tour</strong></div>
             <button class="show-more" onclick="event.stopPropagation(); showProject('vr')">Show More →</button>
           </div>
-        </div>
-      </details>
-    
-      <details>
-        <summary>Academic Projects</summary>
-        <div class="projects-grid">
-          <!-- future coursework projects -->
-        </div>
-      </details>
-    </section>
+  </div>
+</details>
+
+<details>
+  <summary class="project-card project-dropdown">
+    <div class="project-text"><strong>Academic Projects</strong></div>
+    <span class="dropdown-arrow">▼</span>
+  </summary>
+
+  <div class="projects-grid">
+    <!-- future projects -->
+  </div>
+</details>
+
 
     <!-- Skills Section -->
     <section>
