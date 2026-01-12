@@ -71,83 +71,80 @@
     }
 
     .projects-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 1rem;
-}
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
 
-/* Projects cards styled like education cards */
-.project-card {
-  display: flex;
-  align-items: center;
-  background: var(--card);
-  padding: 1rem;
-  border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
+    .project-card {
+      display: flex;
+      align-items: center;
+      background: var(--card);
+      padding: 1rem;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
 
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-}
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
 
-.project-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 24px;
-  overflow: hidden;
-  flex-shrink: 0;
-  background: var(--card);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1rem;
-}
+    .project-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 24px;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: var(--card);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+    }
 
-.project-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+    .project-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-.project-text {
-  flex: 1;
-  font-size: 1rem;
-  font-weight: 600;
-}
+    .project-text {
+      flex: 1;
+      font-size: 1rem;
+      font-weight: 600;
+    }
 
-.show-more {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 8px;
-  background: var(--accent);
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
+    .show-more {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 8px;
+      background: var(--accent);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
 
-.show-more:hover {
-  background: #444;
-  transform: translateX(3px);
-}
+    .show-more:hover {
+      background: #444;
+      transform: translateX(3px);
+    }
 
-/* Mobile: stack content */
-@media (max-width: 600px) {
-  .project-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    @media (max-width: 600px) {
+      .project-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-  .show-more {
-    margin-top: 0.5rem;
-    align-self: flex-end;
-  }
-}
-
+      .show-more {
+        margin-top: 0.5rem;
+        align-self: flex-end;
+      }
+    }
 
     /* Skills */
     .skills-grid {
@@ -338,39 +335,11 @@
       text-decoration: underline;
     }
 
-    /* Remove default details arrow */
-    summary {
-      list-style: none;
-    }
-    summary::-webkit-details-marker {
-      display: none;
-    }
-    
-    /* Make dropdown header behave like a card */
-    .project-dropdown {
-      cursor: pointer;
-      user-select: none;
-      justify-content: space-between;
-      margin-top: 0.6rem; 
-      margin-bottom: 0.6rem; 
-    }
-    
-    /* Arrow styling */
-    .dropdown-arrow {
-      font-size: 1.2rem;
-      transition: transform 0.3s ease;
-    }
-    
-    /* Rotate arrow when open */
-    details[open] .dropdown-arrow {
-      transform: rotate(180deg);
-    }
-    
-    /* Space between dropdown card and content */
-    details > .projects-grid {
-      margin-top: 1rem;
-    }
-
+    /* Dropdown arrow */
+    summary::-webkit-details-marker { display: none; }
+    .project-dropdown { cursor: pointer; user-select: none; display: flex; justify-content: space-between; }
+    .dropdown-arrow { font-size: 1.2rem; transition: transform 0.3s ease; }
+    details[open] .dropdown-arrow { transform: rotate(180deg); }
   </style>
 </head>
 <body>
@@ -382,32 +351,25 @@
   </header>
 
   <main>
-    
     <section>
       <h2>Projects</h2>
-    
-      <!-- Personal Projects Dropdown -->
+
       <details open>
         <summary class="project-card project-dropdown">
           <div class="project-text"><strong>Personal Projects</strong></div>
           <span class="dropdown-arrow">▼</span>
         </summary>
         <div class="projects-grid">
-          <!-- Sequencio Card -->
           <div class="project-card" onclick="showProject('sequencio')">
             <div class="project-img"><img src="https://CorbanAllan.github.io/assets/img/sequencio_logo.webp" alt="Sequencio"></div>
             <div class="project-text"><strong>Sequencio</strong></div>
             <button class="show-more" onclick="event.stopPropagation(); showProject('sequencio')">Show More →</button>
           </div>
-    
-          <!-- SpaceX App Card -->
           <div class="project-card" onclick="showProject('spacex')">
             <div class="project-img"><img src="https://CorbanAllan.github.io/assets/img/spacex_logo.svg" alt="SpaceX App"></div>
             <div class="project-text"><strong>SpaceX App</strong></div>
             <button class="show-more" onclick="event.stopPropagation(); showProject('spacex')">Show More →</button>
           </div>
-    
-          <!-- VR Tour Card -->
           <div class="project-card" onclick="showProject('vr')">
             <div class="project-img"><img src="https://CorbanAllan.github.io/assets/img/vr_logo.png" alt="VR Tour"></div>
             <div class="project-text"><strong>VR Tour</strong></div>
@@ -415,49 +377,34 @@
           </div>
         </div>
       </details>
-    
-      <!-- Academic Projects Dropdown -->
+
       <details>
         <summary class="project-card project-dropdown">
           <div class="project-text"><strong>Academic Projects</strong></div>
           <span class="dropdown-arrow">▼</span>
         </summary>
         <div class="projects-grid">
-          <!-- Add future academic projects here -->
+          <!-- Future academic projects -->
         </div>
       </details>
-    
     </section>
 
-    <!-- Skills Section -->
     <section>
       <h2>Skills</h2>
       <div class="skills-grid">
-        
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin"><p>Kotlin</p></div>
-        
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><p>Python</p></div>
-        
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"><p>C#</p></div>
-        
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><p>Java</p></div>
-        
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><p>HTML</p></div>
-        
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><p>CSS</p></div>
-        
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"><p>SQL</p></div>
-        
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Jetpack Compose"><p>Jetpack Compose</p></div>
-        
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"><p>Firebase</p></div>
-        
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><p>Git</p></div>
-        
       </div>
     </section>
 
-    <!-- Education Section -->
     <section>
       <h2>Education</h2>
       <div class="education-grid">
@@ -484,7 +431,6 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section>
       <h2>Contact Me</h2>
       <form action="https://formspree.io/f/mkoonwyd" method="POST">
@@ -495,7 +441,6 @@
       </form>
     </section>
 
-    <!-- Socials -->
     <section class="socials">
       <a href="https://github.com/CorbanAllan" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/corban-allan/" target="_blank">LinkedIn</a>
@@ -507,6 +452,14 @@
     <p>&copy; 2025 Corban Allan. All rights reserved.</p>
   </footer>
 
+  <!-- Project Modal -->
+  <div id="projectModal" class="project-modal">
+    <div class="project-modal-content">
+      <span class="close" onclick="closeProject()">&times;</span>
+      <div id="projectDetails"></div>
+    </div>
+  </div>
+
   <script>
     function toggleTheme() {
       document.body.classList.toggle('dark');
@@ -515,75 +468,43 @@
     const projects = {
       sequencio: `
         <h3>Sequencio</h3>
-        <p>Sequencio is a modern, visually engaging memory game app where players replicate increasingly complex sequences of colored quarters. The app features smooth animations, immersive sound effects, and a global leaderboard that lets players compete worldwide.</p>
-        <p><strong>Key Features:</strong><br>
-          • Classic sequence memory gameplay that increases in difficulty each round<br>
-          • Global leaderboard powered by Firebase Firestore<br>
-          • Neon-style visuals with glowing effects and immersive audio<br>
-          • Settings screen with toggles for sound, music, and vibration<br>
-          • Google Sign-In authentication to securely sync scores and preferences<br>
-          • Responsive UI that adapts smoothly across device sizes
-        </p>
-        <p><strong>Technologies Used:</strong><br>
-          Kotlin & Jetpack Compose · Firebase Authentication · Firebase Firestore · Hilt · Coroutines & StateFlow · Material 3 Components
-        </p>
+        <p>Sequencio is a modern memory game app where players replicate sequences. Features immersive sound and global leaderboard.</p>
         <div class="carousel">
-          <img src="https://CorbanAllan.github.io/assets/img/sequencio-1.png" alt="Sequencio Screenshot 1">
-          <img src="https://CorbanAllan.github.io/assets/img/sequencio-2.png" alt="Sequencio Screenshot 2">
-          <img src="https://CorbanAllan.github.io/assets/img/sequencio-3.png" alt="Sequencio Screenshot 3">
-          <img src="https://CorbanAllan.github.io/assets/img/sequencio-4.png" alt="Sequencio Screenshot 4">
+          <img src="https://CorbanAllan.github.io/assets/img/sequencio-1.png" alt="Sequencio 1">
+          <img src="https://CorbanAllan.github.io/assets/img/sequencio-2.png" alt="Sequencio 2">
+          <img src="https://CorbanAllan.github.io/assets/img/sequencio-3.png" alt="Sequencio 3">
         </div>
       `,
       spacex: `
         <h3>SpaceX App</h3>
-        <p>The SpaceX App is a dynamic mobile application built with Kotlin and Jetpack Compose that delivers up-to-date information about SpaceX launches, rockets, missions, and news. The app fetches real-time data using the SpaceDevs API and a dedicated news API, providing users with both technical details and the latest updates in the space industry. Retrofit is used for efficient networking and data retrieval, while MVVM architecture ensures a responsive and maintainable UI.</p>
-        <p><strong>Key Features:</strong><br>
-          • Real-time SpaceX launch and rocket data using the SpaceDevs API<br>
-          • Integration with a news API for the latest space-related articles<br>
-          • Modern, responsive UI built with Jetpack Compose<br>
-          • Detailed mission and launch information with historical data<br>
-          • Smooth asynchronous data loading using Coroutines<br>
-          • MVVM architecture for clean state management and scalability
-        </p>
-        <p><strong>Technologies Used:</strong><br>
-          Kotlin · Jetpack Compose · Retrofit · SpaceDevs API · News API · MVVM · Coroutines & StateFlow
-        </p>
+        <p>Dynamic mobile app providing real-time SpaceX launch and rocket data with news integration and modern UI.</p>
         <div class="carousel">
-          <img src="https://CorbanAllan.github.io/assets/img/SpaceX_1.png" alt="SpaceX Screenshot 1">
-          <img src="https://CorbanAllan.github.io/assets/img/SpaceX_2.png" alt="SpaceX Screenshot 2">
-          <img src="https://CorbanAllan.github.io/assets/img/spacex_3.png" alt="SpaceX Screenshot 3">
+          <img src="https://CorbanAllan.github.io/assets/img/SpaceX_1.png" alt="SpaceX 1">
+          <img src="https://CorbanAllan.github.io/assets/img/SpaceX_2.png" alt="SpaceX 2">
+          <img src="https://CorbanAllan.github.io/assets/img/SpaceX_3.png" alt="SpaceX 3">
         </div>
       `,
       vr: `
         <h3>VR Tour</h3>
-        <p>Developed an interactive VR tour of my college using ThingLink, designed to improve accessibility for students unable to attend open days. The tour provides a fully immersive experience with 360° views, embedded multimedia, and interactive hotspots, allowing users to explore key areas of the campus virtually. This project won the Carson Award and a £1000 grant, and I presented it at Ulster University to students and school officials.</p>
-        <p><strong>Key Features:</strong><br>
-          • Interactive 360° VR tour of the college campus<br>
-          • Embedded multimedia content including images, audio, and video<br>
-          • Clickable hotspots for additional information and navigation<br>
-          • Accessible for students who cannot attend in-person open days<br>
-          • Recognized with the Carson Award and grant funding<br>
-          • Presented at Ulster University for educational outreach
-        </p>
-        <p><strong>Technologies Used:</strong><br>
-          ThingLink · Interactive VR · Multimedia Integration · Web & Mobile
-        </p>
+        <p>Virtual Reality Tour experience for users to explore environments interactively using VR devices.</p>
+        <div class="carousel">
+          <img src="https://CorbanAllan.github.io/assets/img/VR_1.png" alt="VR 1">
+          <img src="https://CorbanAllan.github.io/assets/img/VR_2.png" alt="VR 2">
+        </div>
       `
     };
 
-    function showProject(projectKey) {
+    function showProject(projectId) {
       const modal = document.getElementById('projectModal');
       const details = document.getElementById('projectDetails');
-      details.innerHTML = projects[projectKey] || '<p>Project details not found.</p>';
+      details.innerHTML = projects[projectId];
       modal.style.display = 'block';
     }
 
     function closeProject() {
-      const modal = document.getElementById('projectModal');
-      modal.style.display = 'none';
+      document.getElementById('projectModal').style.display = 'none';
     }
 
-    // Close modal when clicking outside content
     window.onclick = function(event) {
       const modal = document.getElementById('projectModal');
       if (event.target == modal) {
@@ -592,14 +513,6 @@
     }
   </script>
 
-  <!-- Project Modal -->
-<div id="projectModal" class="project-modal">
-  <div class="project-modal-content">
-    <span class="close" onclick="closeProject()">&times;</span>
-    <div id="projectDetails"></div>
-  </div>
-</div>
-  
 </body>
 </html>
 
