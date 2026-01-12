@@ -350,32 +350,40 @@
   <main>
     <section>
       <h2>Projects</h2>
-      <div class="projects-grid">
     
-        <!-- Sequencio Card -->
-        <div class="project-card" onclick="showProject('sequencio')">
-          <div class="project-img"><img src="https://CorbanAllan.github.io/assets/img/sequencio_logo.webp" alt="Sequencio"></div>
-          <div class="project-text"><strong>Sequencio</strong></div>
-          <button class="show-more" onclick="event.stopPropagation(); showProject('sequencio')">Show More →</button>
+      <details open>
+        <summary>Personal Projects</summary>
+        <div class="projects-grid">
+            <!-- Sequencio Card -->
+          <div class="project-card" onclick="showProject('sequencio')">
+            <div class="project-img"><img src="https://CorbanAllan.github.io/assets/img/sequencio_logo.webp" alt="Sequencio"></div>
+            <div class="project-text"><strong>Sequencio</strong></div>
+            <button class="show-more" onclick="event.stopPropagation(); showProject('sequencio')">Show More →</button>
+          </div>
+      
+          <!-- SpaceX App Card -->
+          <div class="project-card" onclick="showProject('spacex')">
+            <div class="project-img"><img src="https://CorbanAllan.github.io/assets/img/spacex_logo.svg" alt="SpaceX App"></div>
+            <div class="project-text"><strong>SpaceX App</strong></div>
+            <button class="show-more" onclick="event.stopPropagation(); showProject('spacex')">Show More →</button>
+          </div>
+      
+          <!-- VR Tour Card -->
+          <div class="project-card" onclick="showProject('vr')">
+            <div class="project-img"><img src="https://CorbanAllan.github.io/assets/img/vr_logo.png" alt="VR Tour"></div>
+            <div class="project-text"><strong>VR Tour</strong></div>
+            <button class="show-more" onclick="event.stopPropagation(); showProject('vr')">Show More →</button>
+          </div>
         </div>
+      </details>
     
-        <!-- SpaceX App Card -->
-        <div class="project-card" onclick="showProject('spacex')">
-          <div class="project-img"><img src="https://CorbanAllan.github.io/assets/img/spacex_logo.svg" alt="SpaceX App"></div>
-          <div class="project-text"><strong>SpaceX App</strong></div>
-          <button class="show-more" onclick="event.stopPropagation(); showProject('spacex')">Show More →</button>
+      <details>
+        <summary>Academic Projects</summary>
+        <div class="projects-grid">
+          <!-- future coursework projects -->
         </div>
-    
-        <!-- VR Tour Card -->
-        <div class="project-card" onclick="showProject('vr')">
-          <div class="project-img"><img src="https://CorbanAllan.github.io/assets/img/vr_logo.png" alt="VR Tour"></div>
-          <div class="project-text"><strong>VR Tour</strong></div>
-          <button class="show-more" onclick="event.stopPropagation(); showProject('vr')">Show More →</button>
-        </div>
-    
-      </div>
+      </details>
     </section>
-
 
     <!-- Skills Section -->
     <section>
