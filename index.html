@@ -337,6 +337,57 @@
     .socials a:hover {
       text-decoration: underline;
     }
+
+    /* Dropdown container spacing */
+    details {
+      margin-bottom: 1rem;
+    }
+    
+    /* Remove default marker */
+    summary {
+      list-style: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    
+    /* Card-style dropdown header */
+    .project-dropdown {
+      background: var(--card);
+      padding: 1rem 1.25rem;
+      border-radius: 16px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    /* Hover effect (matches your cards) */
+    .project-dropdown:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+    
+    /* Arrow */
+    .project-dropdown::after {
+      content: "▸";
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+    
+    /* Rotate arrow when open */
+    details[open] .project-dropdown::after {
+      transform: rotate(90deg);
+    }
+    
+    /* Space between header and content */
+    details > .projects-grid {
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
