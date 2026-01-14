@@ -389,9 +389,21 @@
           </div>
           
           <div class="project-card" onclick="showProject('spacex')">
-            <div class="project-img"><img src="https://CorbanAllan.github.io/assets/img/spacex_logo.svg" alt="SpaceX App"></div>
+            <div class="project-img"><img src="https://CorbanAllan.github.io/assets/img/spacex_logo.svg" alt="Space"></div>
             <div class="project-text"><strong>SpaceX</strong></div>
             <button class="show-more" onclick="event.stopPropagation(); showProject('spacex')">Show More →</button>
+          </div>
+
+          <div class="project-card" onclick="showProject('ESP')">
+            <div class="project-img"><img src="https://CorbanAllan.github.io/assets/img/ESP_logo.webp" alt="ESP"></div>
+            <div class="project-text"><strong>ESP</strong></div>
+            <button class="show-more" onclick="event.stopPropagation(); showProject('ESP')">Show More →</button>
+          </div>
+          
+          <div class="project-card" onclick="showProject('higherlower')">
+            <div class="project-img"><img src="https://CorbanAllan.github.io/assets/img/higherlower_logo.webp" alt="Higher lower"></div>
+            <div class="project-text"><strong>Higher Lower</strong></div>
+            <button class="show-more" onclick="event.stopPropagation(); showProject('higherlower')">Show More →</button>
           </div>
           
         </div>
@@ -603,7 +615,69 @@
           <img src="https://CorbanAllan.github.io/assets/img/VR_1.JPG" alt="VR 1">
           <img src="https://CorbanAllan.github.io/assets/img/VR_2.png" alt="VR 2">
         </div>
+      `,
+      ,
+      ESP: `
+        <h3>ESP</h3>
+        <p>
+          Coding Quiz is an interactive educational application developed as part of my coursework to test and reinforce programming knowledge.
+          The app challenges users with a range of coding-related questions, providing instant feedback to support learning and skill development.
+          It went onto recieve 100%, the highest A-level software sytems score and was used by CCEA to show future years an exemplar piece of coursework.
+        </p>
+        
+        <p>
+          <strong>Key Features:</strong><br>
+          • Multiple-choice coding questions covering core programming concepts<br>
+          • Instant feedback on correct and incorrect answers<br>
+          • Score tracking to measure progress and performance<br>
+          • User-friendly interface designed for clarity and ease of use<br>
+          • Structured question flow suitable for classroom and self-study use
+        </p>
+        
+        <p>
+          <strong>Technologies Used:</strong><br>
+          C# · Visual Studio · Windows Forms / WPF ·
+          Event-Driven Programming · Object-Oriented Design
+        </p>
+        <div class="carousel">
+          <img src="https://CorbanAllan.github.io/assets/img/ESP_1.png" alt="ESP 1">
+          <img src="https://CorbanAllan.github.io/assets/img/ESP_2.png" alt="ESP 2">
+          <img src="https://CorbanAllan.github.io/assets/img/ESP_3.png" alt="ESP 3">
+          <img src="https://CorbanAllan.github.io/assets/img/ESP_4.png" alt="ESP 4">
+        </div>
+      `,
+      higherlower: `
+        <h3>Higher Lower</h3>
+        <p>
+          Accessible VR School Tour is an immersive virtual experience designed to allow prospective and disabled students to explore the school environment remotely.
+          The app removes physical barriers by providing a realistic, interactive tour that can be accessed without attending in-person open days. I then went on to present
+          this at the carson awards integrated education event as seen in the image below. My project won a £1000 grant for my schools IT department and I was even asked to 
+          present the project to a group of students and CCEA officals at Ulster University.
+        </p>
+        
+        <p>
+          <strong>Key Features:</strong><br>
+          • Interactive 360° virtual tour of the school campus<br>
+          • Accessible remote viewing for students unable to attend open days<br>
+          • Informational hotspots highlighting classrooms, facilities, and key areas<br>
+          • Easy navigation designed with accessibility in mind<br>
+          • Cross-platform access via web and VR-supported devices<br>
+          • Immersive experience powered by ThingLink
+        </p>
+        
+        <p>
+          <strong>Technologies Used:</strong><br>
+          ThingLink · 360° Photography · Web-Based VR ·
+          Accessibility-Focused Design
+        </p>
+        <div class="carousel">
+          <img src="https://CorbanAllan.github.io/assets/img/higherlower_1.png" alt="higherlower 1">
+          <img src="https://CorbanAllan.github.io/assets/img/higherlower_2.png" alt="higherlower 2">
+          <img src="https://CorbanAllan.github.io/assets/img/higherlower_3.png" alt="higherlower 3">
+          <img src="https://CorbanAllan.github.io/assets/img/higherlower_4.png" alt="higherlower 4">
+        </div>
       `
+      
     };
 
     function showProject(projectId) {
